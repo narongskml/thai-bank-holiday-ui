@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+  © 2025 Narong Sungkhamalai & T-LIVE-CODE Channel
+  https://www.youtube.com/@t-live-code
+  All Rights Reserved.
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Holiday</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div class="content">
+        <div id="ui">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                <img src="asset/images/logo.png" alt="Logo" style="height: 100px;">
+                <h1 style="margin: 0;">Thai Bank Holiday Calendar</h1>
+            </div>    
+            <label for="yearSelect">Select year:</label>
+            <select id="yearSelect">               
+            </select>
+            <button class="generate" onclick="loadBankHolidays()"><i class="fas fa-calendar-alt"></i> Generate Calendar</button>
+            <button class="print" onclick="printPreview()"> <i class="fas fa-print"></i> Print</button>
+            <button class="export" onclick="exportCalendarsToExcel()"><i class="fas fa-file-excel"></i> Export Excel</button>
+            <button class="clear" onclick="clearCalendars()">🧹 Clear</button>
+        </div>
+
+        <div id="calendarContainer"></div>
+    </div>
+  
+    <footer style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #666;">
+        © 2025 Narong Sungkhamalai & T-LIVE-CODE Channel. All rights reserved.
+    </footer>
+  <script src="asset/js/bank-holiday.obf.js"></script>
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                init();
+        });
+   </script>
+ </body>
+</html>
