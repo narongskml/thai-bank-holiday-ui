@@ -3,6 +3,8 @@ Thai bank public holiday app
 load holiday and display full year calendar,  last year, this year
 can print pdf, export excel   solution bulid with html, javascript.
 
+loading official data from : API from bot.or.th and caching in application.
+
 # Gallery
 ![bank-holiday-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/25bbd10e-655b-4364-bc7f-d6da2509f4c5)
 
