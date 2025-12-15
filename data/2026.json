@@ -1,0 +1,160 @@
+{
+   "result":{
+      "api":"API_V2.FIHolidays",
+      "timestamp":"2025-05-11 16:41:07",
+      "data":[
+         {
+            "HolidayWeekDay":"Thursday",
+            "HolidayWeekDayThai":"วันพฤหัสบดี",
+            "Date":"2026-01-01",
+            "DateThai":"01/01/2569",
+            "HolidayDescription":"New Year’s Day",
+            "HolidayDescriptionThai":"วันขึ้นปีใหม่"
+         },
+        {
+            "HolidayWeekDay":"Friday",
+            "HolidayWeekDayThai":"วันศุกร์",
+            "Date":"2026-01-02",
+            "DateThai":"02/01/2569",
+            "HolidayDescription":"Additional special holiday (added)",
+            "HolidayDescriptionThai":"วันหยุดพิเศษ"
+         },
+         {
+            "HolidayWeekDay":"Tuesday",
+            "HolidayWeekDayThai":"วันอังคาร",
+            "Date":"2026-03-03",
+            "DateThai":"03/03/2569",
+            "HolidayDescription":"Makha Bucha Day",
+            "HolidayDescriptionThai":"วันมาฆบูชา"
+         },
+         {
+            "HolidayWeekDay":"Monday",
+            "HolidayWeekDayThai":"วันจันทร์",
+            "Date":"2026-04-06",
+            "DateThai":"06/04/2569",
+            "HolidayDescription":"Chakri Memorial Day",
+            "HolidayDescriptionThai":"วันพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช และวันที่ระลึกมหาจักรีบรมราชวงศ์"
+         },
+         {
+            "HolidayWeekDay":"Monday",
+            "HolidayWeekDayThai":"วันจันทร์",
+            "Date":"2026-04-13",
+            "DateThai":"13/04/2569",
+            "HolidayDescription":"Songkran Festival",
+            "HolidayDescriptionThai":"วันสงกรานต์"
+         },         
+         {
+            "HolidayWeekDay":"Tuesday",
+            "HolidayWeekDayThai":"วันอังคาร",
+            "Date":"2026-04-14",
+            "DateThai":"14/04/2569",
+            "HolidayDescription":"Songkran Festival",
+            "HolidayDescriptionThai":"วันสงกรานต์"
+         },
+         {
+            "HolidayWeekDay":"Wednesday",
+            "HolidayWeekDayThai":"วันพุธ",
+            "Date":"2026-04-15",
+            "DateThai":"15/04/2569",
+            "HolidayDescription":"Songkran Festival",
+            "HolidayDescriptionThai":"วันสงกรานต์"
+         },
+         {
+            "HolidayWeekDay":"Friday",
+            "HolidayWeekDayThai":"วันศุกร์",
+            "Date":"2026-05-01",
+            "DateThai":"01/05/2569",
+            "HolidayDescription":"National Labour Day",
+            "HolidayDescriptionThai":"วันแรงงานแห่งชาติ"
+         },
+         {
+            "HolidayWeekDay":"Monday",
+            "HolidayWeekDayThai":"วันจันทร์",
+            "Date":"2026-05-04",
+            "DateThai":"04/05/2569",
+            "HolidayDescription":"Coronation Day",
+            "HolidayDescriptionThai":"วันฉัตรมงคล"
+         },
+         {
+            "HolidayWeekDay":"Monday",
+            "HolidayWeekDayThai":"วันจันทร์",
+            "Date":"2026-06-01",
+            "DateThai":"01/06/2569",
+            "HolidayDescription":"Substitution for Visakha Bucha Day (Sunday 31th May 2026)",
+            "HolidayDescriptionThai":"ชดเชยวันวิสาขบูชา (วันอาทิตย์ที่ 31 พฤษภาคม 2569)"
+         },
+         {
+            "HolidayWeekDay":"Wednesday",
+            "HolidayWeekDayThai":"วันพุธ",
+            "Date":"2026-06-03",
+            "DateThai":"03/06/2569",
+            "HolidayDescription":"H.M. Queen Suthida Bajrasudhabimalalakshana’s Birthday",
+            "HolidayDescriptionThai":"วันเฉลิมพระชนมพรรษาสมเด็จพระนางเจ้าสุทิดา พัชรสุธาพิมลลักษณ พระบรมราชินี"
+         },
+         {
+            "HolidayWeekDay":"Tuesday",
+            "HolidayWeekDayThai":"วันอังคาร",
+            "Date":"2026-07-28",
+            "DateThai":"28/07/2569",
+            "HolidayDescription":"H.M. King Maha Vajiralongkorn Phra Vajiraklaochaoyuhua’s Birthday",
+            "HolidayDescriptionThai":"วันเฉลิมพระชนมพรรษาพระบาทสมเด็จพระเจ้าอยู่หัว"
+         },         
+         {
+            "HolidayWeekDay":"Wednesday",
+            "HolidayWeekDayThai":"วันพุธ",
+            "Date":"2026-07-29",
+            "DateThai":"29/07/2569",
+            "HolidayDescription":"Asarnha Bucha Day",
+            "HolidayDescriptionThai":"วันอาสาฬหบูชา"
+         },
+         {
+            "HolidayWeekDay":"Wednesday",
+            "HolidayWeekDayThai":"วันพุธ",
+            "Date":"2026-08-12",
+            "DateThai":"12/08/2569",
+            "HolidayDescription":"H.M. Queen Sirikit The Queen Mother’s Birthday and Mother’s Day",
+            "HolidayDescriptionThai":"วันเฉลิมพระชนมพรรษาสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง และวันแม่แห่งชาติ"
+         },
+         {
+            "HolidayWeekDay":"Tuesday",
+            "HolidayWeekDayThai":"วันอังคาร",
+            "Date":"2026-10-13",
+            "DateThai":"13/10/2569",
+            "HolidayDescription":"H.M. King Bhumibol Adulyadej The Great Memorial Day",
+            "HolidayDescriptionThai":"วันนวมินทรมหาราช"
+         },
+         {
+            "HolidayWeekDay":"Friday",
+            "HolidayWeekDayThai":"วันศุกร์",
+            "Date":"2026-10-23",
+            "DateThai":"23/10/2569",
+            "HolidayDescription":"Chulalongkorn Day",
+            "HolidayDescriptionThai":"วันปิยมหาราช"
+         },
+         {
+            "HolidayWeekDay":"Monday",
+            "HolidayWeekDayThai":"วันจันทร์",
+            "Date":"2026-12-07",
+            "DateThai":"07/12/2569",
+            "HolidayDescription":"Substitution for H.M. King Bhumibol Adulyadej The Great’s Birthday, National Day and Father’s Day (5th December 2026)",
+            "HolidayDescriptionThai":"ชดเชย วันคล้ายวันพระบรมราชสมภพพระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร วันชาติ และวันพ่อแห่งชาติ (วันเสาร์ที่ 5 ธันวาคม 2569)"
+         },
+         {
+            "HolidayWeekDay":"Thursday",
+            "HolidayWeekDayThai":"วันพฤหัสบดี",
+            "Date":"2026-12-10",
+            "DateThai":"10/12/2569",
+            "HolidayDescription":"Constitution Day",
+            "HolidayDescriptionThai":"วันรัฐธรรมนูญ"
+         },
+         {
+            "HolidayWeekDay":"Thursday",
+            "HolidayWeekDayThai":"วันพฤหัสบดี",
+            "Date":"2026-12-31",
+            "DateThai":"31/12/2569",
+            "HolidayDescription":"New Year’s Eve",
+            "HolidayDescriptionThai":"วันสิ้นปี"
+         }
+      ]
+   }
+}
