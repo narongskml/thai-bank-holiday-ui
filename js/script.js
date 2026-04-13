@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const holiday = holidayData.result.data.find(h => h.Date === currentStr);
 
             if (holiday) {
-                const holidayName = (lang === 'th') ? holiday.HolidayDescriptionThai : holiday.HolidayDescriptionEng;
+                const holidayName = (lang === 'th') ? holiday.HolidayDescriptionThai : holiday.HolidayDescription;
                 html += `<div class="cell holiday" data-holiday="${holidayName}">${d}</div>`;
             } else {
                 html += `<div class="cell">${d}</div>`;
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         holidayData.result.data.forEach(h => {
             const date = h.Date.replace(/-/g, "");
-            const name = (lang === 'th') ? h.HolidayDescriptionThai : h.HolidayDescriptionEng;
+            const name = (lang === 'th') ? h.HolidayDescriptionThai : h.HolidayDescription;
             ics += "\r\n" + [
                 "BEGIN:VEVENT",
                 `DTSTART;VALUE=DATE:${date}`,
