@@ -46,6 +46,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let holidayData = [];
 
+    // --- Initialize Year Select ---
+    function initializeYearSelect() {
+        const currentYear = new Date().getFullYear();
+        const years = [currentYear - 1, currentYear, currentYear + 1];
+        
+        yearSelect.innerHTML = '';
+        years.forEach(year => {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            if (year === currentYear) {
+                option.selected = true;
+            }
+            yearSelect.appendChild(option);
+        });
+    }
+
     // --- Core Logic ---
 
     async function loadData() {
@@ -243,5 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
     // Run on Start
+    initializeYearSelect();
     loadData();
 });
