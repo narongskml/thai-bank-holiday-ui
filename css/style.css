@@ -1,0 +1,162 @@
+:root {
+    --primary-blue: #2d7df6;
+    --success-green: #28a745;
+    --info-cyan: #17a2b8;
+    --danger-red: #a54747;
+    --gray: #6c757d;
+    --header-dark: #1a2a3a;
+    --holiday-bg: #fbc2c4;
+}
+
+/* Base Responsive Styles */
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    margin: 0; 
+    background: #f4f7f6; 
+    color: #333;
+    -webkit-tap-highlight-color: transparent; /* Touch optimization */
+}
+
+.header-container { background: #fff; padding: 20px 40px; border-bottom: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.logo-area { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.logo-img { width: 200px; height: auto; display: block; }
+.check-mark { color: #28a745; font-size: 2.2rem; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-end; }
+.input-group { display: flex; flex-direction: column; gap: 5px; }
+.input-group label { font-size: 0.85rem; font-weight: bold; }
+.input-group select { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+
+
+.toolbar { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: flex-start;
+}
+
+/* Touch-friendly buttons */
+.btn { 
+    padding: 12px 20px; /* Larger hit area */
+    border: none; 
+    border-radius: 8px; 
+    color: white; 
+    cursor: pointer; 
+    font-weight: 600;
+    font-size: 14px;
+    touch-action: manipulation; /* Prevent double-tap zoom */
+}
+
+.layout-wrapper { 
+    display: flex; 
+    flex-direction: column; /* Stack on mobile */
+    gap: 20px; 
+    padding: 15px;
+}
+
+
+.btn-blue { background: var(--primary-blue); }
+.btn-green { background: var(--success-green); }
+.btn-info { background: var(--info-cyan); }
+.btn-red { background: var(--danger-red); }
+.btn-gray { background: var(--gray); }
+.btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+
+/* 3x4 Grid System */
+/* Calendar Grid Logic */
+.calendar-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 15px; 
+    flex: 3;
+}
+
+.month-box { background: #fff; border: 2px solid #333; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.month-name { background: var(--header-dark); color: #fff; text-align: center; padding: 10px; font-weight: bold; font-size: 1.1rem; }
+
+.days-header, .days-cells { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-size: 0.8rem; }
+.day-label { font-weight: bold; padding: 8px 0; border-bottom: 1px solid #eee; background: #f9f9f9; }
+.cell { padding: 12px 0; min-height: 20px; border-bottom: 1px solid #f0f0f0; }
+.cell.holiday { background: var(--holiday-bg); color: #8d1c1c; font-weight: bold; border-radius: 4px; }
+
+.sidebar { flex: 1; background: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; height: fit-content; position: sticky; top: 20px; }
+#holidayTable { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+#holidayTable th, #holidayTable td { border: 1px solid #eee; padding: 12px; text-align: left; }
+#holidayTable th { background: #f8f9fa; color: #555; }
+#holidayTable th:first-child,
+#holidayTable td:first-child {
+    width: 120px;
+    max-width: 120px;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.signature-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 14px 15px;
+    margin: 0 15px 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.signature-bar .signature-title {
+    font-weight: 700;
+}
+
+.signature-bar a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+
+
+
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+    .layout-wrapper { flex-direction: row; padding: 25px; }
+    .calendar-grid { grid-template-columns: repeat(2, 1fr); }
+    .header-container { padding: 20px 40px; }
+}
+
+@media (min-width: 1200px) {
+    .calendar-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Custom Tooltip Style */
+.custom-tooltip {
+    position: absolute;
+    display: none; /* ซ่อนไว้ก่อน */
+    background: rgba(26, 42, 58, 0.95); /* สีเข้มโปร่งแสง */
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    z-index: 1000;
+    pointer-events: none; /* ไม่ให้ tooltip ขวางเมาส์ */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 250px;
+    line-height: 1.4;
+    transition: opacity 0.2s ease;
+}
+
+/* ปรับแต่งช่องวันหยุดให้ดูรู้ว่ากดได้ */
+.cell.holiday {
+    cursor: pointer;
+    position: relative;
+}
+
+.cell.holiday:active {
+    transform: scale(0.95); /* เอฟเฟกต์ตอนกดบนมือถือ */
+}

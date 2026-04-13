@@ -1,0 +1,102 @@
+@page {
+    size: A4 portrait;
+    margin: 8mm;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #000;
+        font-size: 12px;
+    }
+
+    header.no-print,
+    .toolbar,
+    .input-group,
+    .btn,
+    .logo-area,
+    .check-mark {
+        display: none !important;
+    }
+
+    .layout-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        padding: 0;
+        width: 100%;
+    }
+
+    #calendarGrid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        width: 72%;
+    }
+
+    .sidebar {
+        width: 28%;
+        padding: 8px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        background: transparent;
+        box-shadow: none;
+        position: static;
+        top: auto;
+    }
+
+    .month-box {
+        border: 1px solid #000;
+        border-radius: 4px;
+        padding: 4px;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .month-name {
+        padding: 4px 0;
+        font-size: 0.85rem;
+    }
+
+    .days-header,
+    .days-cells {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .day-label {
+        padding: 3px 0;
+        font-size: 0.65rem;
+    }
+
+    .cell {
+        padding: 3px 0;
+        min-height: 18px;
+        font-size: 0.65rem;
+        line-height: 1;
+        border: 1px solid #ddd;
+    }
+
+    .cell.holiday {
+        padding: 2px 0;
+    }
+
+    #holidayTable {
+        font-size: 0.65rem;
+    }
+
+    #holidayTable th,
+    #holidayTable td {
+        padding: 4px 5px;
+        border: 1px solid #999;
+    }
+
+    .calendar-grid,
+    .sidebar,
+    .month-box,
+    main {
+        page-break-inside: avoid;
+    }
+}
