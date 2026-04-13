@@ -2,6 +2,10 @@
 
 A web-based calendar application for displaying Thai bank holidays with support for multiple languages (Thai and English) and export functionality.
 
+## Screenshot
+
+![Thai Bank Holiday Calendar](img\thaibankholiday.png)
+
 ## Features
 
 - Interactive calendar view of Thai bank holidays
