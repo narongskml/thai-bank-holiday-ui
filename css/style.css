@@ -86,11 +86,11 @@ body {
 #holidayTable th { background: #f8f9fa; color: #555; }
 #holidayTable th:first-child,
 #holidayTable td:first-child {
-    width: 120px;
-    max-width: 120px;
-    white-space: normal;
-    word-wrap: break-word;
-    word-break: break-all;
+    width: 100px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .signature-bar {
