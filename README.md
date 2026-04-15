@@ -4,7 +4,7 @@ A web-based calendar application for displaying Thai bank holidays with support 
 
 ## Screenshot
 
-![Thai Bank Holiday Calendar](img\thaibankholiday.png)
+![Thai Bank Holiday Calendar](https://raw.githubusercontent.com/narongskml/thai-bank-holiday-ui/refs/heads/main/img/thaibankholiday.png)
 
 ## Features
 
