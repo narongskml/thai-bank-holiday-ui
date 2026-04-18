@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderMonth(year, month, lang) {
         const dict = i18n[lang];
-        const date = new Date(year, month+1, 1);
+        const date = new Date(year, month, 1);
         const firstDay = date.getDay();
-        const lastDay = new Date(year, month + 2, 0).getDate();
+        const lastDay = new Date(year, month + 1, 0).getDate();
 
         const box = document.createElement('div');
         box.className = 'month-box';
