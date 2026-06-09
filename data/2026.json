@@ -126,6 +126,14 @@
          {
             "HolidayWeekDay":"Friday",
             "HolidayWeekDayThai":"วันศุกร์",
+            "Date":"2026-10-16",
+            "DateThai":"16/10/2569",
+            "HolidayDescription":"Additional special holiday in Bangkok",
+            "HolidayDescriptionThai":"วันหยุดทำการเพิ่มเป็นกรณีพิเศษในพื้นที่กรุงเทพมหานคร"
+         },
+         {
+            "HolidayWeekDay":"Friday",
+            "HolidayWeekDayThai":"วันศุกร์",
             "Date":"2026-10-23",
             "DateThai":"23/10/2569",
             "HolidayDescription":"Chulalongkorn Day",
