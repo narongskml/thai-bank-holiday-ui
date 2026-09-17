@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialize Year Select ---
     function initializeYearSelect() {
         const currentYear = new Date().getFullYear();
-        const years = [currentYear - 1, currentYear, currentYear + 1];
+        const years = [currentYear - 1, currentYear, currentYear + 1, currentYear +2];
         
         yearSelect.innerHTML = '';
         years.forEach(year => {
