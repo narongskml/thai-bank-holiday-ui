@@ -155,6 +155,14 @@
             "HolidayDescription":"Constitution Day",
             "HolidayDescriptionThai":"วันรัฐธรรมนูญ"
          },
+          {
+            "HolidayWeekDay":"Wednesday",
+            "HolidayWeekDayThai":"วันพุธ",
+            "Date":"2026-12-16",
+            "DateThai":"16/12/2569",
+            "HolidayDescription":"Additional special holiday",
+            "HolidayDescriptionThai":"วันหยุดทำการเพิ่มเป็นกรณีพิเศษ"
+         },
          {
             "HolidayWeekDay":"Thursday",
             "HolidayWeekDayThai":"วันพฤหัสบดี",
